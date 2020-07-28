@@ -36,8 +36,7 @@ Xiaomi
 Block Disguised Third-Party Trackers -> Enable
 
 - Denylist
-*.th.popin.cc  (บล็อกการกด clickbait จากเว็บไทยรัฐโดนไม่ได้ตั้งใจ)
-*.a.popin.cc (บล็อกการกด clickbait จากเว็บไทยรัฐโดนไม่ได้ตั้งใจ)
+*.popin.cc  (บล็อกการกด clickbait จากเว็บไทยรัฐโดนไม่ได้ตั้งใจ)
 *.lap-click.tr.line.me (บล็อกการกด ads จาก LINE โดยไม่ได้ตั้งใจ)
 
 - Allowlist
