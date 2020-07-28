@@ -48,6 +48,8 @@ Block Disguised Third-Party Trackers -> Enable
 *.the1centrallimited.sc.omtrdc.net (สำหรับต้องการให้แแอป The 1 นำเสนอโปรโมชั้นให้ตรงกับที่เราต้องการ)
 *.app.adjust.com (ทำให้สามารถคลิกเปิดแอปจากเว็บได้บางกรณีเช่น เพื่อนชวนเล่นเกมแต่ลิงก์เกมมาในรูปของ app.adjust.com)
 *.ad.doubleclick.net (Allowlist เพราะแอป Youtube Music จะสแปมเชื่อมต่อไปหา ad.doubleclick.net ตลอดเวลาจนกว่าจะต่อได้จนทำให้แบตหมดไว ถ้าใครไม่ได้ใช้ Youtube Music ไม่ต้อง Allow ก็ได้)
+*.midas.gtimg.cn (สำหรับอ่านข่าวโปรโมชั่นในเกม PUBG)
+*.ws-adv.ais.co.th (ป้องกันแอป AIS ไม่สามารถทำงานได้)
 
 - Setting
 Logs -> IP and Domain
