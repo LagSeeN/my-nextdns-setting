@@ -32,6 +32,8 @@ oisd
 - Native Tracking Protection
 Samsung
 Xiaomi
+Huawei
+Windows
 
 Block Disguised Third-Party Trackers -> Enable
 
