@@ -25,7 +25,6 @@ men
 
 - Blocklists:
 AdGuard DNS filter
-NextDNS Recommended Ads & Trackers Blocklist
 notracking
 oisd
 
