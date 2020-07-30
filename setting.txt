@@ -25,7 +25,6 @@ men
 
 - Blocklists:
 AdGuard DNS filter
-notracking
 oisd
 
 - Native Tracking Protection
@@ -42,8 +41,6 @@ Block Disguised Third-Party Trackers -> Enable
 
 - Allowlist
 *.api2.branch.io (ป้องกันไม่ให้แอป Ture Wallet ทำงานผิดพลาด)
-*.appboy-images.com (ป้องกันไม่ให้แอป Ture Wallet ทำงานผิดพลาด)
-*.sdk.iad-03.braze.com (ป้องกันไม่ให้แอป Ture Wallet ทำงานผิดพลาด)
 *.torimochi.line-apps.com (ป้องกันไม่ให้แอป LINE ทำงานผิดพลาด)
 *.app.adjust.com (ทำให้สามารถคลิกเปิดแอปจากเว็บได้บางกรณีเช่น เพื่อนชวนเล่นเกมแต่ลิงก์เกมมาในรูปของ app.adjust.com)
 *.ad.doubleclick.net (Allowlist เพราะแอป Youtube Music จะสแปมเชื่อมต่อไปหา ad.doubleclick.net ตลอดเวลาจนกว่าจะต่อได้จนทำให้แบตหมดไว ถ้าใครไม่ได้ใช้ Youtube Music ไม่ต้อง Allow ก็ได้)
