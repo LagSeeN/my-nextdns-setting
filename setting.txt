@@ -57,6 +57,6 @@ Logs -> IP and Domain
 Retention -> 3 Months
 Storage Location -> Switzerland
 Block Page -> Disable (เนื่องจากทำให้แอปมือถือทำงานช้าในบางกรณี)
-EDNS Client Subnet -> Enable
+EDNS Client Subnet -> Disable
 Cache Boost -> Enable
 Handshake -> Enable
