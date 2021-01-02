@@ -1,59 +1,89 @@
-- Security
-Threat Intelligence Feeds -> enable
-Google Safe Browsing -> enable
-Cryptojacking Protection -> enable
-DNS Rebinding Protection -> enable
-IDN Homograph Attacks Protection -> enable
-Typosquatting Protection -> enable
-Domain Generation Algorithms (DGAs) Protection -> enable
-Block Parked Domains -> enable
-Block Child Sexual Abuse Material (CSAM) -> enable
-
-- TLD
-tk
-fit 
-ga 
-gq 
-work 
-cf 
-ml 
-date  
-wang 
-men 
-
-- Privacy
-
-- Blocklists:
-AdGuard DNS filter
-oisd
-
-- Native Tracking Protection
-Samsung
-Xiaomi
-Huawei
-Windows
-
-Block Disguised Third-Party Trackers -> Enable
-
-- Denylist
-*.popin.cc  (บล็อกการกด clickbait จากเว็บไทยรัฐโดนไม่ได้ตั้งใจ)
-*.lap-click.tr.line.me (บล็อกการกด ads จาก LINE โดยไม่ได้ตั้งใจ)
-
-- Allowlist
-*.api2.branch.io (ป้องกันไม่ให้แอป Ture Wallet ทำงานผิดพลาด)
-*.torimochi.line-apps.com (ป้องกันไม่ให้แอป LINE ทำงานผิดพลาด)
-*.app.adjust.com (ทำให้สามารถคลิกเปิดแอปจากเว็บได้บางกรณีเช่น เพื่อนชวนเล่นเกมแต่ลิงก์เกมมาในรูปของ app.adjust.com)
-*.ad.doubleclick.net (Allowlist เพราะแอป Youtube Music จะสแปมเชื่อมต่อไปหา ad.doubleclick.net ตลอดเวลาจนกว่าจะต่อได้จนทำให้แบตหมดไว ถ้าใครไม่ได้ใช้ Youtube Music ไม่ต้อง Allow ก็ได้)
-*.midas.gtimg.cn (สำหรับอ่านข่าวโปรโมชั่นในเกม PUBG)
-*.service.game-mode.net (Allowlist GameMode ของ Samsung Game Launcher)
-*.sc.omtrdc.net (Allowlist พวกแนะนำโปรโมชั่นในแอปเช่น The1)
-*.tt.omtrdc.net (Allowlist พวกแนะนำโปรโมชั่นในแอปเช่น The1)
-
-- Setting
-Logs -> IP and Domain
-Retention -> 3 Months
-Storage Location -> Switzerland
-Block Page -> Disable (เนื่องจากทำให้แอปมือถือทำงานช้าในบางกรณี)
-EDNS Client Subnet -> Disable
-Cache Boost -> Enable
-Handshake -> Enable
+{
+  "security": {
+    "threatIntelligenceFeeds": true,
+    "googleSafeBrowsing": true,
+    "cryptojacking": true,
+    "dnsRebinding": false,
+    "homograph": true,
+    "typosquatting": true,
+    "dga": true,
+    "nrd": false,
+    "parked": false,
+    "blocked_tlds": [],
+    "csam": true
+  },
+  "denylist": [
+    { "domain": "api.glb.samsung-gamelauncher.com", "active": false },
+    { "domain": "glpals.com", "active": false },
+    { "domain": "sspapi-prd.samsungrs.com", "active": false },
+    { "domain": "popin.cc", "active": true },
+    { "domain": "lap-click.tr.line.me", "active": true }
+  ],
+  "privacy": {
+    "blocklists": ["notracking"],
+    "natives": [],
+    "blockDisguised": false,
+    "allowAffiliate": true
+  },
+  "parentalcontrol": {
+    "services": [],
+    "categories": [],
+    "safeSearch": false,
+    "youtubeRestrictedMode": false,
+    "blockBypass": false
+  },
+  "settings": {
+    "name": "Home",
+    "logging": true,
+    "logging_disable_query": false,
+    "logging_disable_client": false,
+    "logging_retention": 604800,
+    "logging_location": "ch",
+    "blockPage": false,
+    "ecs": false,
+    "cacheBoost": true,
+    "cnameFlattening": false,
+    "handshake": true,
+    "rewrites": []
+  },
+  "allowlist": [
+    { "domain": "login.microsoftonline.com", "active": true },
+    { "domain": "dpm.demdex.net", "active": true },
+    { "domain": "prod.telemetry.ros.rockstargames.com", "active": true },
+    { "domain": "android.clients.google.com", "active": true },
+    { "domain": "dl.delivery.mp.microsoft.com", "active": true },
+    { "domain": "geo-prod.do.dsp.mp.microsoft.com", "active": true },
+    { "domain": "video-stats.l.google.com", "active": true },
+    { "domain": "outlook.office365.com", "active": true },
+    { "domain": "tracking.epicgames.com", "active": true },
+    { "domain": "g.live.com", "active": true },
+    { "domain": "i.s-microsoft.com", "active": true },
+    { "domain": "products.office.com", "active": true },
+    { "domain": "firestore.googleapis.com", "active": true },
+    { "domain": "clients4.google.com", "active": true },
+    { "domain": "bnc.lt", "active": true },
+    { "domain": "c.s-microsoft.com", "active": true },
+    { "domain": "s.youtube.com", "active": true },
+    { "domain": "login.live.com", "active": true },
+    { "domain": "reminders-pa.googleapis.com", "active": true },
+    { "domain": "clients2.google.com", "active": true },
+    { "domain": "displaycatalog.mp.microsoft.com", "active": true },
+    { "domain": "app.appsflyer.com", "active": true },
+    { "domain": "appboy-images.com", "active": true },
+    { "domain": "the1centrallimited.tt.omtrdc.net", "active": true },
+    { "domain": "www.toast.com", "active": true },
+    { "domain": "launches.appsflyer.com", "active": true },
+    { "domain": "nr-data.net", "active": true },
+    { "domain": "stats.g.doubleclick.net", "active": true },
+    { "domain": "www.google-analytics.com", "active": true },
+    { "domain": "js-agent.newrelic.com", "active": true },
+    { "domain": "v20.events.data.microsoft.com", "active": true },
+    { "domain": "v10.events.data.microsoft.com", "active": true },
+    { "domain": "click.ml.mailersend.com", "active": true },
+    { "domain": "sdk.iad-03.braze.com", "active": true },
+    { "domain": "service.game-mode.net", "active": true },
+    { "domain": "midas.gtimg.cn", "active": false },
+    { "domain": "torimochi.line-apps.com", "active": true },
+    { "domain": "api2.branch.io", "active": true }
+  ]
+}
