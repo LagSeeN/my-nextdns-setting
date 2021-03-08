@@ -1,4 +1,36 @@
 {
+  "denylist": [
+    {
+      "domain": "lap-click.tr.line.me",
+      "active": true
+    }
+  ],
+  "parentalcontrol": {
+    "safeSearch": false,
+    "youtubeRestrictedMode": false,
+    "blockBypass": false,
+    "services": [],
+    "categories": []
+  },
+  "allowlist": [],
+  "privacy": {
+    "blockDisguised": true,
+    "allowAffiliate": true,
+    "blocklists": [
+      "1hosts-lite"
+    ],
+    "natives": [
+      {
+        "id": "xiaomi"
+      },
+      {
+        "id": "samsung"
+      },
+      {
+        "id": "huawei"
+      }
+    ]
+  },
   "security": {
     "threatIntelligenceFeeds": true,
     "googleSafeBrowsing": true,
@@ -9,81 +41,21 @@
     "dga": true,
     "nrd": false,
     "parked": false,
-    "blocked_tlds": [],
-    "csam": true
-  },
-  "denylist": [
-    { "domain": "api.glb.samsung-gamelauncher.com", "active": false },
-    { "domain": "glpals.com", "active": false },
-    { "domain": "sspapi-prd.samsungrs.com", "active": false },
-    { "domain": "popin.cc", "active": true },
-    { "domain": "lap-click.tr.line.me", "active": true }
-  ],
-  "privacy": {
-    "blocklists": ["notracking"],
-    "natives": [],
-    "blockDisguised": false,
-    "allowAffiliate": true
-  },
-  "parentalcontrol": {
-    "services": [],
-    "categories": [],
-    "safeSearch": false,
-    "youtubeRestrictedMode": false,
-    "blockBypass": false
+    "csam": true,
+    "blocked_tlds": []
   },
   "settings": {
     "name": "Home",
     "logging": true,
     "logging_disable_query": false,
     "logging_disable_client": false,
-    "logging_retention": 604800,
+    "logging_retention": 7776000,
     "logging_location": "ch",
     "blockPage": false,
     "ecs": false,
     "cacheBoost": true,
     "cnameFlattening": false,
-    "handshake": true,
+    "handshake": false,
     "rewrites": []
-  },
-  "allowlist": [
-    { "domain": "login.microsoftonline.com", "active": true },
-    { "domain": "dpm.demdex.net", "active": true },
-    { "domain": "prod.telemetry.ros.rockstargames.com", "active": true },
-    { "domain": "android.clients.google.com", "active": true },
-    { "domain": "dl.delivery.mp.microsoft.com", "active": true },
-    { "domain": "geo-prod.do.dsp.mp.microsoft.com", "active": true },
-    { "domain": "video-stats.l.google.com", "active": true },
-    { "domain": "outlook.office365.com", "active": true },
-    { "domain": "tracking.epicgames.com", "active": true },
-    { "domain": "g.live.com", "active": true },
-    { "domain": "i.s-microsoft.com", "active": true },
-    { "domain": "products.office.com", "active": true },
-    { "domain": "firestore.googleapis.com", "active": true },
-    { "domain": "clients4.google.com", "active": true },
-    { "domain": "bnc.lt", "active": true },
-    { "domain": "c.s-microsoft.com", "active": true },
-    { "domain": "s.youtube.com", "active": true },
-    { "domain": "login.live.com", "active": true },
-    { "domain": "reminders-pa.googleapis.com", "active": true },
-    { "domain": "clients2.google.com", "active": true },
-    { "domain": "displaycatalog.mp.microsoft.com", "active": true },
-    { "domain": "app.appsflyer.com", "active": true },
-    { "domain": "appboy-images.com", "active": true },
-    { "domain": "the1centrallimited.tt.omtrdc.net", "active": true },
-    { "domain": "www.toast.com", "active": true },
-    { "domain": "launches.appsflyer.com", "active": true },
-    { "domain": "nr-data.net", "active": true },
-    { "domain": "stats.g.doubleclick.net", "active": true },
-    { "domain": "www.google-analytics.com", "active": true },
-    { "domain": "js-agent.newrelic.com", "active": true },
-    { "domain": "v20.events.data.microsoft.com", "active": true },
-    { "domain": "v10.events.data.microsoft.com", "active": true },
-    { "domain": "click.ml.mailersend.com", "active": true },
-    { "domain": "sdk.iad-03.braze.com", "active": true },
-    { "domain": "service.game-mode.net", "active": true },
-    { "domain": "midas.gtimg.cn", "active": false },
-    { "domain": "torimochi.line-apps.com", "active": true },
-    { "domain": "api2.branch.io", "active": true }
-  ]
+  }
 }
